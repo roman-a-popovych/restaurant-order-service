@@ -63,7 +63,8 @@ export async function POST(request: Request) {
       );
     }
 
-    const orderId = Number(orderReference);
+    const orderIdMatch = orderReference.match(/^order-(\d+)-/);
+    const orderId = orderIdMatch ? Number(orderIdMatch[1]) : Number(orderReference);
 
     if (!Number.isInteger(orderId) || orderId <= 0) {
       return NextResponse.json(

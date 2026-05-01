@@ -69,7 +69,7 @@ export async function POST(request: Request) {
       );
     }
 
-    const orderReference = String(order.id);
+    const orderReference = `order-${order.id}-${Date.now()}`;
     const orderDate = Math.floor(Date.now() / 1000);
     const amount = Number(order.total_amount);
     const currency = "UAH";
