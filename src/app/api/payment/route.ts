@@ -108,7 +108,7 @@ export async function POST(request: Request) {
       apiVersion: 1,
       language: "UA",
       serviceUrl: `${merchantDomain}/api/payment/callback`,
-      returnUrl: `${merchantDomain}/payment/success?orderId=${orderId}`,
+      returnUrl: `${merchantDomain}/api/payment/return?orderId=${orderId}`,
       orderReference,
       orderDate,
       amount,
