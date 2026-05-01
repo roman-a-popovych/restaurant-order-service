@@ -35,7 +35,7 @@ export default function CartPage() {
 
   return (
     <main className="mx-auto max-w-4xl px-6 py-10">
-      <h1 className="mb-6 text-3xl font-bold">Кошик</h1>
+      <h1 className="mb-6 text-3xl font-bold text-white">Кошик</h1>
 
       {cart.length === 0 ? (
         <div className="rounded-lg border bg-white p-6">
