@@ -10,7 +10,7 @@ export default async function AdminOrdersPage() {
 
   return (
     <main className="mx-auto max-w-6xl px-6 py-10 text-black">
-      <h1 className="mb-6 text-3xl font-bold">Замовлення</h1>
+      <h1 className="mb-6 text-3xl font-bold text-white">Замовлення</h1>
 
       <div className="rounded-lg border bg-white overflow-hidden">
         <table className="w-full text-left text-sm">

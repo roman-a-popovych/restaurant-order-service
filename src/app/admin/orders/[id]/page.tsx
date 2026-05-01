@@ -21,7 +21,7 @@ export default async function OrderDetailsPage({
 
   return (
     <main className="mx-auto max-w-4xl px-6 py-10 text-black">
-      <h1 className="mb-6 text-3xl font-bold">
+      <h1 className="mb-6 text-3xl font-bold text-white">
         Замовлення №{order?.id}
       </h1>
 
